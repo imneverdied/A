@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/earlyaccess/notosans-tc.css');
+/* @import url('https://fonts.googleapis.com/earlyaccess/notosans-tc.css'); */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap');
 
 * {
   margin: 0;
@@ -18,7 +19,8 @@
   bottom: 20px;
   right: 20px;
   display: flex;
-  flex-direction: row; /* 改為橫向排列 */
+  /*flex-direction: row; 改為橫向排列 */
+  flex-direction: column; /* 改為向排列 */
   gap: 10px;
 }
 /* 主要內容區域樣式 */
@@ -86,7 +88,7 @@
 
 .video-overlay h2 {
   color: white;
-  font-size: 2rem;
+  font-size: 1.5rem;
   text-align: center;
   margin-top: 10px;
   font-weight: normal;
@@ -139,6 +141,7 @@
 .title {
   font-size: 24px;
   font-weight: bold;
+  font-family: 'Noto Sans TC', sans-serif; /* 設置全局字體為思源黑體 */
 }
 
 .address {
@@ -282,5 +285,5 @@ body {
 }
 
 .title {
-  font-family: 'Noto Serif TC', serif; /* 標題使用襯線字體 */
+  font-family: 'Noto Sans TC', sans-serif; /* 設置全局字體為思源黑體 */
 }

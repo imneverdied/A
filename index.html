@@ -46,15 +46,6 @@
       </div>
       <div class="share-links">
         <a
-          href="https://www.addtoany.com/share#url=http%3A%2F%2Ftaoyuanfeast.tw&title=taoyuanfeast"
-          target="_blank"
-          ><img
-            src="https://static.addtoany.com/buttons/a2a.svg"
-            width="32"
-            height="32"
-            style="background-color: royalblue"
-        /></a>
-        <a
           href="https://www.addtoany.com/add_to/facebook?linkurl=http%3A%2F%2Ftaoyuanfeast.tw&linkname=taoyuanfeast"
           target="_blank"
           ><img
@@ -64,31 +55,13 @@
             style="background-color: royalblue"
         /></a>
         <a
-          href="https://www.addtoany.com/add_to/facebook_messenger?linkurl=http%3A%2F%2Ftaoyuanfeast.tw&linkname=taoyuanfeast"
-          target="_blank"
-          ><img
-            src="https://static.addtoany.com/buttons/facebook_messenger.svg"
-            width="32"
-            height="32"
-            style="background-color: royalblue"
-        /></a>
-        <a
-          href="https://www.addtoany.com/add_to/google_gmail?linkurl=http%3A%2F%2Ftaoyuanfeast.tw&linkname=taoyuanfeast"
-          target="_blank"
-          ><img
-            src="https://static.addtoany.com/buttons/gmail.svg"
-            width="32"
-            height="32"
-            style="background-color: royalblue"
-        /></a>
-        <a
-          href="https://www.addtoany.com/add_to/threads?linkurl=http%3A%2F%2Ftaoyuanfeast.tw&linkname=taoyuanfeast"
+          href="https://www.addtoany.com/add_to/threads?linkurl=http%3A%2F%2Ftaoyuanfeast.tw&amp;linkname=taoyuanfeast"
           target="_blank"
           ><img
             src="https://static.addtoany.com/buttons/threads.svg"
             width="32"
             height="32"
-            style="background-color: royalblue"
+            style="background-color: black"
         /></a>
         <a
           href="https://www.addtoany.com/add_to/line?linkurl=http%3A%2F%2Ftaoyuanfeast.tw&linkname=taoyuanfeast"
@@ -97,25 +70,16 @@
             src="https://static.addtoany.com/buttons/line.svg"
             width="32"
             height="32"
-            style="background-color: royalblue"
+            style="background-color: green"
         /></a>
         <a
-          href="https://www.addtoany.com/add_to/x?linkurl=http%3A%2F%2Ftaoyuanfeast.tw&linkname=taoyuanfeast"
+          href="https://www.addtoany.com/share#url=http%3A%2F%2Ftaoyuanfeast.tw&title=taoyuanfeast"
           target="_blank"
           ><img
-            src="https://static.addtoany.com/buttons/x.svg"
+            src="https://static.addtoany.com/buttons/a2a.svg"
             width="32"
             height="32"
-            style="background-color: royalblue"
-        /></a>
-        <a
-          href="https://www.addtoany.com/add_to/email?linkurl=http%3A%2F%2Ftaoyuanfeast.tw&linkname=taoyuanfeast"
-          target="_blank"
-          ><img
-            src="https://static.addtoany.com/buttons/email.svg"
-            width="32"
-            height="32"
-            style="background-color: royalblue"
+            style="background-color: gray"
         /></a>
       </div>
     </div>
@@ -158,15 +122,18 @@
           <h3 class="title">{{ video.title }}</h3>
 
           <p>{{ video.description }}</p>
-          <p>🌏地區: {{ video.area }}</p>
+          <br />
+          <p>🌐 {{ video.area }}</p>
+          <br />
           <p>
-            🔖標籤:
+            🔖
             <span v-for="tag in video.tags.split(',')" :key="tag" class="tag"
               >{{ tag }}</span
             >
           </p>
+          <br />
           <p class="address">
-            打開地圖👉
+            📍
             <a
               :href="'https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent(video.address)"
               target="_blank"
@@ -198,12 +165,14 @@
     </div>
 
     <footer>
+      <!--
       <img
-        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTX12jfq4izfBLhuzFe1NvpPN_5VGtnO0evAN_ZZWwbRo6JC_0X&s"
+        src="https://i.imgur.com/MZ29QyH.jpeg"
         alt="Logo 1"
         class="footer-logo"
-      />
-      <!-- <img src="logo2.png" alt="Logo 2" class="footer-logo" /> -->
+      />-->
+
+      <!--<img src="logo2.png" alt="Logo 2" class="footer-logo" /> -->
       <div class="footer-text">
         本網站影片來源為社群媒體公開資訊，影片版權為原影片作者所有，如需上架影片至此網站或其他需求請email聯絡tyeatfun@gmail.com
       </div>

@@ -3,6 +3,7 @@ const app = Vue.createApp({
     return {
       selectedArea: '',
       selectedTags: [],
+      sortOrder: 'desc', // 新增排序方式
       areas: [
         '中壢區',
         '平鎮區',
@@ -39,6 +40,13 @@ const app = Vue.createApp({
           ...video,
           address: video.address.replace(/<br>/g, '\n'), // 處理地址中的換行符號
         }));
+    },
+    sortedVideos() {
+      return this.filteredVideos.sort((a, b) => {
+        const likesA = parseInt(a.likes, 10);
+        const likesB = parseInt(b.likes, 10);
+        return this.sortOrder === 'asc' ? likesA - likesB : likesB - likesA;
+      });
     },
   },
   watch: {
